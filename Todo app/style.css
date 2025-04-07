@@ -105,9 +105,56 @@ form {
 }
 
 .todo-text {
+    display: inline-block;
+    padding: 15px; 
+    padding-right: 0;
+    flex-grow: 1;
+    transition: 200ms ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.full-text {
     padding: 15px;
     padding-right: 0;
     flex-grow: 1;
+    transition: 200ms ease;
+}
+
+.more-btn {
+    padding: 3px;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover span{
+        color: var(--accent-color);
+    }
+}
+
+.btn-pressed {
+    padding: 3px;
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
+
+.more-btn span {
+    font-size: 35px;
     transition: 200ms ease;
 }
 
